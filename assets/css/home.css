@@ -1,0 +1,48 @@
+#mainBox{
+  min-height:100px;
+  /* width:200px; */
+}
+#heading{
+  color:white;
+}
+#formInp{
+  height: 100px;
+  width: 300px;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid grey;
+  background-color: antiquewhite;
+  /* margin-top: -100px; */
+}
+#fileBox  > div{
+  height:40px;
+
+}
+#fileBox .flexHori{
+  justify-content: space-around;
+  align-items: center;
+  font-size:1.2rem;
+  font-weight: 400;
+  border: 1px solid greenyellow;
+  background-color: rgb(208, 177, 237);
+  margin-top:5px
+}
+
+#fileBox .flexHori > div{
+  width: 30px;
+}
+
+.linkView{
+  border:2px solid greenyellow;
+  background-color: rgb(57, 110, 140);
+  width:45px;
+}
+
+.linkView a{
+  color:white;
+  text-decoration: none;
+}
+
+.countInfo{
+  max-width:10px;
+}

@@ -1,0 +1,10 @@
+.box{
+  width:50px;
+  color:white;
+}
+#header img{
+  width:40px
+}
+.box:hover{
+  text-decoration: underline;
+}

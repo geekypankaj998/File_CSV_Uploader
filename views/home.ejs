@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/home.css">
+<h1 id="heading">Uploader</h1>
+<div id="mainBox" class="flexVert">
+     <form id="formInp" action="/upload" method="post"  class="flexVert" enctype="multipart/form-data">
+      <div class="flexHori"><input type="file" name="fileInp" required accept="text/csv" /><img src="/images/uploadicon1.jpg" alt="Upload-key"></div>
+      <div> <button>Submit</button></div>
+     </form>
+   
+   <div id="fileBox" class="flexVert">
+     <%let countr=1%>
+      <% for(fileCurr of fileList){%>
+        <div class="flexHori">
+          <div class="countInfo"><%=countr%></div>
+          <di class="info"><%=fileCurr.fileLocation.split('-')[1] %></di>
+          <di ><a href="/del/<%=fileCurr.id%>"><i class="fas fa-solid fa-trash"></i></a></di>
+          <di class="linkView"><a href="/view/<%=fileCurr.id%>">View</a></di>
+        </div>
+        <%countr+=1%>  
+      <%}%> 
+   </div>
+</div>
+
