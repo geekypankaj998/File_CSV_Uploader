@@ -41,6 +41,5 @@ const fileSchema = new mongoose.Schema({
   fileSchema.statics.path_file = PATH_FILE;
   
   
-  const File = mongoose.model('FileObj',fileSchema);
-  
+  const File = mongoose.model('FileObj',fileSchema); 
   module.exports = File;
